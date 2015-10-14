@@ -1,0 +1,15 @@
+project {
+  name = "otto-getting-started"
+  infrastructure = "digitalocean"
+}
+
+infrastructure "digitalocean" {
+  flavor = "coreos-cluster"
+
+  foundation "deis" {}
+}
+
+application {
+  name = "otto-getting-started"
+  type = "custom"
+}
